@@ -1,0 +1,11 @@
+N=int(input())
+rev=0
+original=N
+while(N!=0):
+    remainder=N%10
+    rev=rev*10+remainder
+    N//=10
+if(original==rev):
+    print("True")
+else:
+    print("False")
